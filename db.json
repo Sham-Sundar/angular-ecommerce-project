@@ -1,0 +1,84 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "image": "https://m.media-amazon.com/images/I/71GX5QGOKsL._AC_UL320_.jpg",
+            "title": "Men's Eversoft Cotton Stay Tucked Crew T-Shirt",
+            "brand": "Fruit of the Loom",
+            "price": "18.99",
+            "discountedPrice": "21.48"
+        },
+        {
+            "id": 2,
+            "image": "https://m.media-amazon.com/images/I/51lcacCccHL._AC_UL320_.jpg",
+            "title": "Men's Cotton, Moisture-Wicking Crew Tee Undershirts, Multi-Packs",
+            "brand": "Hanes",
+            "price": "19.00",
+            "discountedPrice": "17.44"
+        },
+        {
+            "id": 3,
+            "image": "https://m.media-amazon.com/images/I/61SXEcJ6DdL._AC_UL320_.jpg",
+            "title": "Men's Eversoft Cotton Short Sleeve Pocket T-Shirts, Breathable & Tag",
+            "brand": "Fruit of the Loom",
+            "price": "21.49",
+            "discountedPrice": "19.98"
+        },
+        {
+            "id": 4,
+            "image": "https://m.media-amazon.com/images/I/61NxWlAdrpL._AC_UL320_.jpg",
+            "title": "Men's Pocket T-shirt, Moisture-wicking Cotton Crewneck Pocket",
+            "brand": "Hanes",
+            "price": "21.99",
+            "discountedPrice": "20.33"
+        },
+        {
+            "id": 5,
+            "image": "https://m.media-amazon.com/images/I/91DvRI0XoAL._AC_UL320_.jpg",
+            "title": "Men's Venice Burnout Notch Neck Tee Shirt",
+            "brand": "Lucky Brand",
+            "price": "34.50",
+            "discountedPrice": "20.70"
+        },
+        {
+            "id": 6,
+            "image": "https://m.media-amazon.com/images/I/81gHzitlpsL._AC_UL320_.jpg",
+            "title": "5 Pack Men’s Active Quick Dry Crew Neck T Shirts | Athletic Running",
+            "brand": "Lucky Brand",
+            "price": "59.95",
+            "discountedPrice": "39.95"
+        },
+        {
+            "id": 7,
+            "image": "https://m.media-amazon.com/images/I/61uGbz1oqNL._AC_UL320_.jpg",
+            "title": "Adult Short Sleeve Pocket Tee, Style 6030",
+            "brand": "Comfort Colors",
+            "price": "18.66",
+            "discountedPrice": "15.08"
+        },
+        {
+            "id": 8,
+            "image": "https://m.media-amazon.com/images/I/91n8gWbqEBS._AC_UL320_.jpg",
+            "title": "Men's Icon Slash Gradient T-shirt",
+            "brand": "Hurley",
+            "price": "26.00",
+            "discountedPrice": "22.61"
+        },
+        {
+            "id": 9,
+            "image": "https://m.media-amazon.com/images/I/71e0w6RNEjL._AC_UL320_.jpg",
+            "title": "Men's Navtech Colorblock Tee",
+            "brand": "Nautica",
+            "price": "24.99",
+            "discountedPrice": "18.38"
+        },
+        {
+            "id": 10,
+            "image": "https://m.media-amazon.com/images/I/418lGdg2tBL._AC_UL320_.jpg",
+            "title": "mens Ultimate Crewneck T-Shirt",
+            "brand": "Hanes",
+            "price": "8.22",
+            "discountedPrice": "6.85"
+        }
+    ]
+}

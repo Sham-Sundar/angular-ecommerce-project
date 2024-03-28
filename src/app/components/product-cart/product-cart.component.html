@@ -1,0 +1,18 @@
+<div class="products-container">
+    @for(item of product; track item){
+
+    <div class="product-cart">
+        <div class="product-image">
+            <img [src]="item.image" alt="product-image">
+        </div>
+        <p class="product-brand">{{item.brand}}</p>
+        <p class="product-title">{{item.title | slice:0:59}}...</p>
+        <div class="price-container">
+            <p class="product-price">{{ item.discountedPrice | currency}}<sup class="cancelled-price"><s>{{ item.price
+                        |currency}}</s></sup></p>
+        </div>
+    </div>
+    }@empty {
+    <h2>No data found.</h2>
+    }
+</div>
