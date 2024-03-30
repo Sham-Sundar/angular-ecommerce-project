@@ -3,17 +3,17 @@ import { Component} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ProductCartComponent } from './components/product-cart/product-cart.component';
 import { HeaderComponent } from './layout/header/header.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProductCartComponent, HeaderComponent,CommonModule],
+  imports: [RouterOutlet, ProductCartComponent, HeaderComponent,CommonModule, SearchBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-
 
   title = 'ng-app';
 

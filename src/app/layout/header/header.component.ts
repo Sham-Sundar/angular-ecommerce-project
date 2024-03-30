@@ -12,6 +12,4 @@ import { Product } from '../../interfaces/product.interface';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
-
 }

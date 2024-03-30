@@ -1,18 +1,24 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { AppComponent } from '../../app.component';
 import { CommonModule } from '@angular/common';
+import { SharedService } from '../../services/shared.service';
 
 @Component({
   selector: 'app-search-bar',
   standalone: true,
-  imports: [AppComponent],
+  imports: [],
   templateUrl: './search-bar.component.html',
   styleUrl: './search-bar.component.css'
 })
 export class SearchBarComponent {
-  @Output() searchedValue = new EventEmitter<string>();
 
-  onSearch(data:string) {
-    this.searchedValue.emit(data);
+  constructor(private sharedService: SharedService){}
+
+  @Output() searchValueChanged = new EventEmitter<string>();
+
+  onSearch(searchValue:string) {
+    this.searchValueChanged.emit(searchValue);
+    this.sharedService.sendData(searchValue);
   }
+
 }
