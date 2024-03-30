@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { AppComponent } from '../../app.component';
-import { CommonModule } from '@angular/common';
 import { SharedService } from '../../services/shared.service';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-search-bar',

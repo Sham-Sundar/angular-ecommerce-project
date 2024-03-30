@@ -1,20 +1,18 @@
-import { CommonModule} from '@angular/common';
 import { Component} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ProductCartComponent } from './components/product-cart/product-cart.component';
 import { HeaderComponent } from './layout/header/header.component';
-import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProductCartComponent, HeaderComponent,CommonModule, SearchBarComponent],
+  imports: [RouterOutlet,HomeComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
 
-  title = 'ng-app';
+  title = 'Amazon UI Clone - Angular17';
 
 }

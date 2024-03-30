@@ -4,11 +4,12 @@ import { ProductsService } from '../../services/products.service';
 import { Product } from '../../interfaces/product.interface';
 import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { SharedService } from '../../services/shared.service';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-product-cart',
   standalone: true,
-  imports: [CommonModule, SlicePipe, SearchBarComponent],
+  imports: [CommonModule, SlicePipe],
   templateUrl: './product-cart.component.html',
   styleUrl: './product-cart.component.css'
 })

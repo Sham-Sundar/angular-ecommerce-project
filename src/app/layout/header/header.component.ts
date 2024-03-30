@@ -1,13 +1,12 @@
-import { Component, EventEmitter, Output, inject, output } from '@angular/core';
+import { Component } from '@angular/core';
 import { SearchBarComponent } from '../../components/search-bar/search-bar.component';
-import { ProductsService } from '../../services/products.service';
 import { CommonModule } from '@angular/common';
-import { Product } from '../../interfaces/product.interface';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [SearchBarComponent, CommonModule],
+  imports: [SearchBarComponent, CommonModule, RouterOutlet],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

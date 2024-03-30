@@ -6,7 +6,6 @@ import { Product } from '../interfaces/product.interface';
   providedIn: 'root'
 })
 export class ProductsService {
-[x: string]: any;
 
 constructor(private http:HttpClient) {}
 
