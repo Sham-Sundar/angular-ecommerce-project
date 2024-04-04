@@ -10,8 +10,8 @@
             <h1 class="title">{{product.title}}</h1>
         </div>
         <div class="rating">
-            <p>Ratings: {{value}}</p>
-            <p-rating [(ngModel)]="value" [readonly]="true" [cancel]="false"></p-rating>
+            <p>Ratings: {{ratingValue}}</p>
+            <p-rating [(ngModel)]="ratingValue" [readonly]="true" [cancel]="false"></p-rating>
         </div>
 
         <hr class="hr">
@@ -21,7 +21,6 @@
 
         <table class="product-details-table">
             <th class="table-header">Product details</th>
-
             <tr>
                 <td><strong>Fabric type</strong></td>
                 <td>100% Cotton</td>
@@ -82,7 +81,7 @@
             <li><strong>Date First Available : </strong> Soft lay flat collar</li>
             <li><strong>Manufacturer : </strong> Classic fit for full range of movement while staying tucked</li>
             <li><strong>ASIN : </strong> Wicks Moisture</li>
-            <li><strong>Customer Reviews : </strong><p-rating [(ngModel)]="value" [readonly]="true" [cancel]="false"></p-rating></li>
+            <li><strong>Customer Reviews : </strong><p-rating [(ngModel)]="ratingValue" [readonly]="true" [cancel]="false"></p-rating></li>
         </ul>
     </div>
 
