@@ -2,45 +2,48 @@ import { CommonModule, SlicePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { ProductsService } from '../../services/products.service';
 import { Product } from '../../interfaces/product.interface';
-import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { SharedService } from '../../services/shared.service';
-import { RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
+import { RatingModule } from 'primeng/rating';
+import { RatingService } from '../../services/rating.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-product-cart',
   standalone: true,
-  imports: [CommonModule, SlicePipe],
+  imports: [CommonModule, SlicePipe, RatingModule, FormsModule],
   templateUrl: './product-cart.component.html',
   styleUrl: './product-cart.component.css'
 })
 export class ProductCartComponent {
-  searchData:string = '';
+
+  ratingValue!:number;
   product:Product[]= [];
   filteredProducts: Product[] = [];
 
-  constructor(private productService:ProductsService, private sharedService: SharedService){
+  constructor(private productService:ProductsService, private sharedService: SharedService, private router:Router, private rating: RatingService){
     
+    this.ratingValue = this.rating.value;
+
     //Receiving products from ProductsService
     this.productService.getProducts().subscribe((result)=>{
-      // console.log(result);
       this.product = result;
-
       this.filteredProducts = this.product;
-      
     })
 
-    //Applying filtering logic
-    this.sharedService.searchData$.subscribe(data => {
-      this.searchData = data;
-      
-      if(this.searchData){
-        this.filteredProducts = this.product.filter(x=>x.title.toLowerCase().includes(this.searchData))
+    //Receiving search bar input and applying filtering logic
+    this.sharedService.searchData$.subscribe(data => {      
+      if(data){
+        this.filteredProducts = this.product.filter(x=>x.title.toLowerCase().includes(data))
       }else{
         this.filteredProducts = this.product;
       }
     })
+    
+  }
+  onClickProduct(id:number, title:string){
+    this.router.navigateByUrl("product/"+id+'/'+title);
   }
 }
-
 
 

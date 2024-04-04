@@ -1,6 +1,17 @@
+/* PrimeNG Imports */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
 *{
+    font-family:'Amazon Ember';
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Rating Customization */
+@layer reset, primeng;
+
+@layer reset {
+    .p-rating-icon{
+        color: #FFA41C;
+    }
 }

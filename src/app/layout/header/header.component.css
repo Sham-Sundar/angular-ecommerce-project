@@ -5,11 +5,11 @@
     background-color: #131921;
     height: 60px;
     padding: 30px;
-
 }
 
 .web-logo {
     height: 35px;
+    cursor: pointer;
 }
 
 .web-logo img {

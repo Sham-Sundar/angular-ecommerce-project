@@ -13,4 +13,8 @@ getProducts(){
   return this.http.get<Product[]>("http://localhost:3000/products");
 }
 
+getProductById(id:number){
+  return this.http.get<Product>("http://localhost:3000/products/"+id);
+}
+
 }

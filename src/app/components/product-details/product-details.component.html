@@ -1,0 +1,99 @@
+<div class="container">
+
+    <div class="img-area">
+        <img [src]="product.image" alt="" srcset="">
+    </div>
+
+    <div class="description-area">
+        <div class="brand-title">
+            <a class="brand">Brand: {{product.brand}}</a>
+            <h1 class="title">{{product.title}}</h1>
+        </div>
+        <div class="rating">
+            <p>Ratings: {{value}}</p>
+            <p-rating [(ngModel)]="value" [readonly]="true" [cancel]="false"></p-rating>
+        </div>
+
+        <hr class="hr">
+        <p><sup>Price: </sup>{{product.price | currency}}</p>
+        <p>Size:</p>
+        <p-dropdown [options]="sizes" [(ngModel)]="selectedCity" placeholder="Select"></p-dropdown>
+
+        <table class="product-details-table">
+            <th class="table-header">Product details</th>
+
+            <tr>
+                <td><strong>Fabric type</strong></td>
+                <td>100% Cotton</td>
+
+            </tr>
+            <tr>
+                <td><strong>Care instructions</strong></td>
+                <td>Machine Wash</td>
+
+            </tr>
+            <tr>
+                <td><strong>Origin</strong></td>
+                <td>Imported</td>
+
+            </tr>
+            <tr>
+                <td><strong>Closure type</strong></td>
+                <td>Pull On</td>
+
+            </tr>
+        </table>
+
+        <hr class="hr">
+
+        <div>
+            <h3 class="bullet-points-heading">About this item</h3>
+
+            <ul class="bullet-points">
+
+                <li>12 pack Classic White Crew Undershirts</li>
+                <li>Soft covered seams on neck and shoulders for comfortable fit</li>
+                <li>Soft lay flat collar</li>
+                <li>Classic fit for full range of movement while staying tucked</li>
+                <li>Wicks Moisture</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="add-to-cart-area">
+        <p>To buy, select <strong>Size</strong></p>
+        <button class="cart-btn">Add to Cart</button>
+        <hr class="hr">
+        <button class="list-btn">Add to List</button>
+    </div>
+
+</div>
+
+<div class="container-2">
+    <hr class="hr">
+
+    <div>
+        <h2 class="bullet-points-details-heading">Product Details</h2>
+
+        <ul class="bullet-points-details">
+
+            <li><strong>Package Dimensions : </strong>12 pack Classic White Crew Undershirts</li>
+            <li><strong>Department : </strong> Soft covered seams on neck and shoulders for comfortable fit</li>
+            <li><strong>Date First Available : </strong> Soft lay flat collar</li>
+            <li><strong>Manufacturer : </strong> Classic fit for full range of movement while staying tucked</li>
+            <li><strong>ASIN : </strong> Wicks Moisture</li>
+            <li><strong>Customer Reviews : </strong><p-rating [(ngModel)]="value" [readonly]="true" [cancel]="false"></p-rating></li>
+        </ul>
+    </div>
+
+    <hr class="hr">
+
+    <div>
+        <h2 class="bullet-points-details-heading">Product Description</h2>
+
+        <ul class="bullet-points-details">
+
+            <li>Fruit Of The Loom Mens Short Sleeve Crew T-Shirt 6 Pack.</li>
+        </ul>
+    </div>
+</div>
