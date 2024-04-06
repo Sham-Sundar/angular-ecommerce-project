@@ -1,19 +1,9 @@
-.header {
+.container{
+    height: 20vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #131921;
-    height: 60px;
-    padding: 30px;
-}
-
-.web-logo {
-    height: 35px;
-    cursor: pointer;
-}
-
-.web-logo img {
-    height: 100%;
+    justify-content: center;
+    gap: 20px;
 }
 
 button{
@@ -22,7 +12,7 @@ button{
     color:black;
     background-color: #F2941B;
     border-radius: 5px;
-    border: none;
+    border: 2px solid black;
 
     &&:hover{
         background-color: #f9ac48;
@@ -34,9 +24,4 @@ button{
         font-size: 18px;
         font-weight: 500;
     }
-}
-
-.menus{
-    display: flex;
-    gap: 20px;
 }

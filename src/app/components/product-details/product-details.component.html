@@ -15,7 +15,7 @@
         </div>
 
         <hr class="hr">
-        <p><sup>Price: </sup>{{product.price | currency}}</p>
+        <p><sup>Price: </sup>{{product.discountedPrice | currency}}</p>
         <p>Size:</p>
         <p-dropdown [options]="sizes" [(ngModel)]="selectedCity" placeholder="Select"></p-dropdown>
 
@@ -24,22 +24,18 @@
             <tr>
                 <td><strong>Fabric type</strong></td>
                 <td>100% Cotton</td>
-
             </tr>
             <tr>
                 <td><strong>Care instructions</strong></td>
                 <td>Machine Wash</td>
-
             </tr>
             <tr>
                 <td><strong>Origin</strong></td>
                 <td>Imported</td>
-
             </tr>
             <tr>
                 <td><strong>Closure type</strong></td>
                 <td>Pull On</td>
-
             </tr>
         </table>
 
@@ -81,7 +77,8 @@
             <li><strong>Date First Available : </strong> Soft lay flat collar</li>
             <li><strong>Manufacturer : </strong> Classic fit for full range of movement while staying tucked</li>
             <li><strong>ASIN : </strong> Wicks Moisture</li>
-            <li><strong>Customer Reviews : </strong><p-rating [(ngModel)]="ratingValue" [readonly]="true" [cancel]="false"></p-rating></li>
+            <li><strong>Customer Reviews : </strong><p-rating [(ngModel)]="ratingValue" [readonly]="true"
+                    [cancel]="false"></p-rating></li>
         </ul>
     </div>
 
